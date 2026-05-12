@@ -1,0 +1,6 @@
+flask
+flask-login
+werkzeug
+pytest
+pytest-mock
+python-dotenv

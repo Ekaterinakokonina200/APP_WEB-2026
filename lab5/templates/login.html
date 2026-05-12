@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-4">
+        <div class="card">
+            <div class="card-header">
+                <h4>Вход в систему</h4>
+            </div>
+            <div class="card-body">
+                <form method="post">
+                    <div class="mb-3">
+                        <label class="form-label">Логин</label>
+                        <input type="text" name="login" class="form-control" required>
+                    </div>
+                    <div class="mb-3">
+                        <label class="form-label">Пароль</label>
+                        <input type="password" name="password" class="form-control" required>
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" name="remember" class="form-check-input">
+                        <label class="form-check-label">Запомнить меня</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Войти</button>
+                </form>
+                <hr>
+                <p class="text-muted text-center small">Тестовые данные: <strong>admin</strong> / <strong>Admin123!</strong></p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8 text-center">
+        <h1 class="my-5">Лабораторная работа №2</h1>
+        <p class="lead">Веб-приложение с использованием фреймворка Flask</p>
+        
+        <div class="list-group mt-5">
+            <a href="{{ url_for('url_params') }}" class="list-group-item list-group-item-action">
+                <h5>📊 Параметры URL</h5>
+                <p class="mb-1">Отображение всех переданных параметров запроса</p>
+            </a>
+            <a href="{{ url_for('headers') }}" class="list-group-item list-group-item-action">
+                <h5>📋 Заголовки запроса</h5>
+                <p class="mb-1">Отображение всех HTTP-заголовков</p>
+            </a>
+            <a href="{{ url_for('cookies') }}" class="list-group-item list-group-item-action">
+                <h5>🍪 Cookie</h5>
+                <p class="mb-1">Установка, просмотр и удаление cookie</p>
+            </a>
+            <a href="{{ url_for('form_params') }}" class="list-group-item list-group-item-action">
+                <h5>📝 Параметры формы</h5>
+                <p class="mb-1">Отображение данных, отправленных через форму</p>
+            </a>
+            <a href="{{ url_for('phone') }}" class="list-group-item list-group-item-action">
+                <h5>📱 Валидация номера телефона</h5>
+                <p class="mb-1">Проверка и форматирование номера телефона</p>
+            </a>
+        </div>
+    </div>
+</div>
+{% endblock %}

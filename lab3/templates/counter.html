@@ -1,0 +1,24 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-6 text-center">
+        <div class="card">
+            <div class="card-header">
+                <h4 class="mb-0">🔢 Счётчик посещений</h4>
+            </div>
+            <div class="card-body">
+                <div class="counter-number">{{ visits }}</div>
+                <p class="lead mt-3">
+                    Вы посетили эту страницу <strong>{{ visits }}</strong> 
+                    {% if visits == 1 %}раз{% else %}раз{% endif %}.
+                </p>
+                <p class="text-muted">
+                    Счётчик работает с использованием Flask-сессий.
+                    Обновите страницу, чтобы увеличить счётчик.
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

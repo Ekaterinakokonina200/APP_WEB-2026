@@ -1,0 +1,26 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<h1 class="my-4">Заголовки запроса</h1>
+
+<div class="card">
+    <div class="card-header">
+        <h5>HTTP Заголовки</h5>
+    </div>
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr><th>Заголовок</th><th>Значение</th></tr>
+            </thead>
+            <tbody>
+                {% for key, value in headers.items() %}
+                <tr>
+                    <td><strong>{{ key }}</strong></td>
+                    <td><code>{{ value }}</code></td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </div>
+</div>
+{% endblock %}

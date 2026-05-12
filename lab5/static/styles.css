@@ -1,0 +1,17 @@
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+footer {
+    margin-top: auto;
+}
+
+.table th {
+    background-color: #f8f9fa;
+}
+
+.invalid-feedback {
+    display: block;
+}

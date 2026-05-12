@@ -1,0 +1,5 @@
+flask
+flask-login
+pytest
+pytest-mock
+python-dotenv
